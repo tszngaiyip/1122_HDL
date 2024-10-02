@@ -1,0 +1,1 @@
+使用VHDL 製作Moore machine with binary encoded state machine

@@ -1,0 +1,105 @@
+|lab05_bonus
+SIN => myJKFF:FF0.J
+SIN => myJKFF:FF0.K
+CLK => myJKFF:FF0.CK
+CLK => myJKFF:FF1.CK
+CLK => myJKFF:FF2.CK
+CLK => myJKFF:FF3.CK
+Preset => myJKFF:FF0.Preset
+Preset => myJKFF:FF1.Preset
+Preset => myJKFF:FF2.Preset
+Preset => myJKFF:FF3.Preset
+Clear => myJKFF:FF0.Clear
+Clear => myJKFF:FF1.Clear
+Clear => myJKFF:FF2.Clear
+Clear => myJKFF:FF3.Clear
+QA <= myJKFF:FF0.Q
+QB <= myJKFF:FF1.Q
+QC <= myJKFF:FF2.Q
+QD <= myJKFF:FF3.Q
+
+
+|lab05_bonus|myJKFF:FF0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+CK => NotQ_internal.CLK
+CK => Q_internal.CLK
+Preset => process_0.IN0
+Preset => process_0.IN0
+Preset => process_0.IN0
+Clear => process_0.IN1
+Clear => process_0.IN1
+Clear => process_0.IN1
+Q <= Q_internal.DB_MAX_OUTPUT_PORT_TYPE
+NotQ <= NotQ_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05_bonus|myJKFF:FF1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+CK => NotQ_internal.CLK
+CK => Q_internal.CLK
+Preset => process_0.IN0
+Preset => process_0.IN0
+Preset => process_0.IN0
+Clear => process_0.IN1
+Clear => process_0.IN1
+Clear => process_0.IN1
+Q <= Q_internal.DB_MAX_OUTPUT_PORT_TYPE
+NotQ <= NotQ_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05_bonus|myJKFF:FF2
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+CK => NotQ_internal.CLK
+CK => Q_internal.CLK
+Preset => process_0.IN0
+Preset => process_0.IN0
+Preset => process_0.IN0
+Clear => process_0.IN1
+Clear => process_0.IN1
+Clear => process_0.IN1
+Q <= Q_internal.DB_MAX_OUTPUT_PORT_TYPE
+NotQ <= NotQ_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05_bonus|myJKFF:FF3
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+CK => NotQ_internal.CLK
+CK => Q_internal.CLK
+Preset => process_0.IN0
+Preset => process_0.IN0
+Preset => process_0.IN0
+Clear => process_0.IN1
+Clear => process_0.IN1
+Clear => process_0.IN1
+Q <= Q_internal.DB_MAX_OUTPUT_PORT_TYPE
+NotQ <= NotQ_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+

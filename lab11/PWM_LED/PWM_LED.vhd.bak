@@ -1,0 +1,62 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+
+entity PWM_LED is
+port(clk: in std_logic;
+	 enable: in std_logic;
+	 led: out std_logic);
+end PWM_LED;
+
+architecture st of PWM_LED is
+signal clk_count: std_logic_vector(31 downto 0) := (others => '0');
+signal pwm_count: std_logic_vector(10 downto 0) := (others => '0');
+signal duty: std_logic_vector(10 downto 0) := "01111100111";
+begin
+	clk_cnt:process(clk,enable)
+	begin
+		if enable = '1' then
+			if clk'event and clk = '1' then
+				clk_count <= clk_count + 1;
+				if clk_count = 101 then
+					clk_count <= x"00000001";
+				end if;
+			end if;
+		else
+			clk_count <= (others => '0');
+		end if;
+	end process;
+	
+	cnt:process(clk_count,enable)
+	begin
+		if enable = '1' then
+			if clk_count = 100 then
+				if pwm_count = 1000 then
+					pwm_count <= (others => '0');
+				else
+					pwm_count <= pwm_count + 1;
+				end if;
+			end if;
+		else
+			pwm_count <= (others => '0');
+		end if;
+	end process;
+	
+	GEN_LED:process(pwm_count,enable,duty)
+	begin
+		if enable = '1' then
+			if pwm_count >= duty then
+				led <= '1';
+				duty <= duty - 1;
+				if duty = 0 then
+					duty <= "01111100111";
+				end if;
+			else
+				led <= '0';
+			end if;
+		else
+			led <= '0';
+		end if;
+	end process;
+end st;

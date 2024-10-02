@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Administrator\Desktop\lab07\simulation\modelsim
+vlab07
+Ic?=ANdl`Gk`jDG3Ld0V`S2
+V^dI_8e]?YP9=3ke:]d<iA0
+w1714011084
+8lab07.vo
+Flab07.vo
+L0 31
+Z1 OV;L;6.5b;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+!s100 e^1R>;T19Lkd<d`TekCPd2
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtest
+!s100 eI^KO?on]9l]@n=jz4??U1
+IKXzW_g>K=Ll`KHgFQ25bz0
+Vk<3<[f=78GX=_HO53D;7>3
+w1714011074
+8C:/Users/Administrator/Desktop/lab07/test.v
+FC:/Users/Administrator/Desktop/lab07/test.v
+L0 2
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+!s92 -vlog01compat -work work +incdir+C:/Users/Administrator/Desktop/lab07 -O0

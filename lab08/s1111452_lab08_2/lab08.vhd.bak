@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity lab08 is
+    port
+    (
+        clk, clrn : in std_logic;
+        Q : out std_logic_vector(1 downto 0) -- Assuming 2-bit output
+    );
+end lab08;
+
+architecture Behavioral of lab08 is
+    signal counter : std_logic_vector(1 downto 0); -- Counter signal
+begin
+    process(clk, clrn)  
+    begin
+        if rising_edge(clk) then
+            if clrn = '1' then
+                counter <= (others => '0');
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+
+    -- Assign the signal to the output port
+    Q <= counter;
+
+end Behavioral;

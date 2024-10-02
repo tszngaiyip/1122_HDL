@@ -1,0 +1,74 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneiii
+Quartus root          :  c:/altera/91sp2/quartus/bin/
+Quartus sim root      :  c:/altera/91sp2/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  lab07.vo
+Sim SDF file          :  lab07__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/91sp2/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File lab07_run_msim_gate_verilog.do already exists - backing up current file as lab07_run_msim_gate_verilog.do.bak11
+Probing transcript
+ModelSim-Altera Info: # Reading C:/altera/91sp2/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # do lab07_run_msim_gate_verilog.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {lab07.vo}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+ModelSim-Altera Info: # -- Compiling module lab07
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	lab07
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+C:/Users/Administrator/Desktop/lab07 {C:/Users/Administrator/Desktop/lab07/test.v}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+ModelSim-Altera Info: # -- Compiling module test
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	test
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc" test
+ModelSim-Altera Info: # vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test 
+ModelSim-Altera Info: # Loading work.test
+ModelSim-Altera Info: # Loading work.lab07
+ModelSim-Altera Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb
+ModelSim-Altera Info: # Loading cycloneiii_ver.cycloneiii_io_ibuf
+ModelSim-Altera Info: # Loading cycloneiii_ver.cycloneiii_io_obuf
+ModelSim-Altera Info: # SDF 6.5b Compiler 2009.10 Oct  1 2009
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Loading instances from lab07_v.sdo
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/lab07/test.v(8): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'A'.
+ModelSim-Altera Info: #         Region: /test/DUT
+ModelSim-Altera Warning: # ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/lab07/test.v(8): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'B'.
+ModelSim-Altera Info: #         Region: /test/DUT
+ModelSim-Altera Info: # Loading timing data from lab07_v.sdo
+ModelSim-Altera Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Region: /test  File: C:/Users/Administrator/Desktop/lab07/test.v
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body
+ModelSim-Altera Info: # run -all
+ModelSim-Altera Info: # Break key hit 
+ModelSim-Altera Info: # Simulation stop requested.
+Info: NativeLink simulation flow was successful

@@ -1,0 +1,14 @@
+
+State Machine - |lab06_bonus|present_state
+Name present_state.s3 present_state.s2 present_state.s1 present_state.s0 
+present_state.s0 0 0 0 0 
+present_state.s1 0 0 1 1 
+present_state.s2 0 1 0 1 
+present_state.s3 1 0 0 1 
+
+State Machine - |lab06_bonus|next_state
+Name next_state.s3 next_state.s2 next_state.s1 next_state.s0 
+next_state.s0 0 0 0 0 
+next_state.s1 0 0 1 1 
+next_state.s2 0 1 0 1 
+next_state.s3 1 0 0 1 

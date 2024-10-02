@@ -1,0 +1,113 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Administrator\Downloads\counter60\simulation\modelsim
+Ecounter10
+Z1 w1714704008
+Z2 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8C:/Users/Administrator/Downloads/counter60/counter10.vhd
+Z6 FC:/Users/Administrator/Downloads/counter60/counter10.vhd
+l0
+L5
+VnZn2H<0GHaV_c7]F[ncm22
+Z7 OV;C;6.5b;42
+31
+Z8 o-93 -work work -O0
+Z9 tExplicit 1
+!s100 GbzzNHc5iC^G[dMjOBk>@1
+Acounter10_architecture
+R2
+R3
+R4
+DEx4 work 9 counter10 0 22 nZn2H<0GHaV_c7]F[ncm22
+l18
+L15
+VN9]H@loPDQBnfhZkN3z?M1
+R7
+31
+Z10 Mx3 4 ieee 14 std_logic_1164
+Z11 Mx2 4 ieee 18 std_logic_unsigned
+Z12 Mx1 4 ieee 15 std_logic_arith
+R8
+R9
+!s100 ?bb=CPXL>VGhH[2b[Z[LQ1
+Ecounter6
+Z13 w1714703994
+R2
+R3
+R4
+Z14 8C:/Users/Administrator/Downloads/counter60/counter6.vhd
+Z15 FC:/Users/Administrator/Downloads/counter60/counter6.vhd
+l0
+L5
+VII=GgAd1ASV[4WUBLHEaY0
+R7
+31
+R8
+R9
+!s100 =555lVE_46eAilOV1bKA;3
+Acounter6_architecture
+R2
+R3
+R4
+DEx4 work 8 counter6 0 22 II=GgAd1ASV[4WUBLHEaY0
+l18
+L15
+VLRVY9eiI69ST3@Ii@TIG43
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 B12UKdL<ccfegO1lYEZo12
+Ecounter60
+Z16 w1714703810
+R2
+R3
+R4
+Z17 8C:/Users/Administrator/Downloads/counter60/counter60.vhd
+Z18 FC:/Users/Administrator/Downloads/counter60/counter60.vhd
+l0
+L5
+VC57dk_^C7RJeJXP@Cba<^1
+R7
+31
+R8
+R9
+!s100 dX^feoXFjAhL[McC45<Ao1
+Aa
+R2
+R3
+R4
+DEx4 work 9 counter60 0 22 C57dk_^C7RJeJXP@Cba<^1
+l35
+L17
+VFIDfmdDHi@igj85m>U6UB1
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 al5dGR02AgJNTmHh<E`f50
+vtest
+!s100 gZWM>deZ5Y3e>7Vg[5JOR0
+IfldSak<iZ?O1NM7F7DU<A1
+Vk<3<[f=78GX=_HO53D;7>3
+w1714704510
+8C:/Users/Administrator/Downloads/counter60/test.v
+FC:/Users/Administrator/Downloads/counter60/test.v
+L0 2
+OV;L;6.5b;42
+r1
+!s85 0
+31
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Administrator/Downloads/counter60 -O0

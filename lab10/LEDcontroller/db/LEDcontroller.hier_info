@@ -1,0 +1,23 @@
+|LEDcontroller
+button[0] => LED[0].DATAIN
+button[1] => LED[1].DATAIN
+button[2] => LED[2].DATAIN
+button[3] => LED[3].DATAIN
+button[4] => LED[4].DATAIN
+button[5] => LED[5].DATAIN
+button[6] => LED[6].DATAIN
+button[7] => LED[7].DATAIN
+button[8] => LED[8].DATAIN
+button[9] => LED[9].DATAIN
+LED[0] <= button[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= button[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= button[2].DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= button[3].DB_MAX_OUTPUT_PORT_TYPE
+LED[4] <= button[4].DB_MAX_OUTPUT_PORT_TYPE
+LED[5] <= button[5].DB_MAX_OUTPUT_PORT_TYPE
+LED[6] <= button[6].DB_MAX_OUTPUT_PORT_TYPE
+LED[7] <= button[7].DB_MAX_OUTPUT_PORT_TYPE
+LED[8] <= button[8].DB_MAX_OUTPUT_PORT_TYPE
+LED[9] <= button[9].DB_MAX_OUTPUT_PORT_TYPE
+
+

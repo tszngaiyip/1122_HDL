@@ -1,0 +1,22 @@
+|bonus
+d0 => ~NO_FANOUT~
+d1 => c~0.IN0
+d2 => b~0.IN0
+d3 => b~0.IN1
+d3 => c~0.IN1
+d4 => a~0.IN0
+d5 => a~0.IN1
+d5 => c~1.IN1
+d6 => a~1.IN1
+d6 => b~1.IN1
+d7 => a~2.IN1
+d7 => b~2.IN1
+d7 => c~2.IN1
+en => a~3.IN1
+en => b~3.IN1
+en => c~3.IN1
+a <= a~3.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~3.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

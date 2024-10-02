@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Jun 07 10:16:25 2024
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : counter99
+Top-level Entity Name : counter99
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 112 / 15,408 ( < 1 % )
+    Total combinational functions : 97 / 15,408 ( < 1 % )
+    Dedicated logic registers : 55 / 15,408 ( < 1 % )
+Total registers : 55
+Total pins : 18 / 347 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

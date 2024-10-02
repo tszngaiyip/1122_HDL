@@ -1,0 +1,9 @@
+|lab08
+clk => count[0].CLK
+clk => count[1].CLK
+clrn => count[0].ACLR
+clrn => count[1].ACLR
+Q[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

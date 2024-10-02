@@ -1,0 +1,40 @@
+|PWM_LED
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+enable => led.OUTPUTSELECT
+enable => count[15].ENA
+enable => count[14].ENA
+enable => count[13].ENA
+enable => count[12].ENA
+enable => count[11].ENA
+enable => count[10].ENA
+enable => count[9].ENA
+enable => count[8].ENA
+enable => count[7].ENA
+enable => count[6].ENA
+enable => count[5].ENA
+enable => count[4].ENA
+enable => count[3].ENA
+enable => count[2].ENA
+enable => count[1].ENA
+enable => count[0].ENA
+duty[0] => LessThan1.IN16
+duty[1] => LessThan1.IN15
+duty[2] => LessThan1.IN14
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+

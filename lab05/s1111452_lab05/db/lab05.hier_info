@@ -1,0 +1,68 @@
+|lab05
+DIN => myDFF:FF0.D
+CLK => myDFF:FF0.CK
+CLK => myDFF:FF1.CK
+CLK => myDFF:FF2.CK
+CLK => myDFF:FF3.CK
+CLK => myDFF:FF4.CK
+CLK => myDFF:FF5.CK
+CLK => myDFF:FF6.CK
+CLK => myDFF:FF7.CK
+S0 <= myDFF:FF7.Q
+S1 <= myDFF:FF6.Q
+S2 <= myDFF:FF5.Q
+S3 <= myDFF:FF4.Q
+S4 <= myDFF:FF3.Q
+S5 <= myDFF:FF2.Q
+S6 <= myDFF:FF1.Q
+S7 <= myDFF:FF0.Q
+
+
+|lab05|myDFF:FF0
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF1
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF2
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF3
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF4
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF5
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF6
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab05|myDFF:FF7
+D => Q~reg0.DATAIN
+CK => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

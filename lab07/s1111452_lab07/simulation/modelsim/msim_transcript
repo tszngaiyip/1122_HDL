@@ -1,0 +1,52 @@
+# Reading C:/altera/91sp2/modelsim_ase/tcl/vsim/pref.tcl 
+# do lab07_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {lab07.vo}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module lab07
+# 
+# Top level modules:
+# 	lab07
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Administrator/Desktop/lab07 {C:/Users/Administrator/Desktop/lab07/test.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc" test
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test 
+# Loading work.test
+# Loading work.lab07
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# SDF 6.5b Compiler 2009.10 Oct  1 2009
+# 
+# Loading instances from lab07_v.sdo
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/lab07/test.v(8): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'A'.
+#         Region: /test/DUT
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/lab07/test.v(8): [PCDPC] - Port size (5 or 5) does not match connection size (4) for port 'B'.
+#         Region: /test/DUT
+# Loading timing data from lab07_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /test  File: C:/Users/Administrator/Desktop/lab07/test.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# Break key hit 
+# Simulation stop requested.

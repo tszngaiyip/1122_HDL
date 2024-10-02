@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+entity count60 is
+port(clk,en: in std_logic;
+	 D: in std_logic_vector(5 downto 0);
+	 Co: out std_logic;
+	 Q: out std_logic_vector(5 downto 0));
+end count60;
+
+architecture st of count60 is
+signal tempQ: std_logic_vector(5 downto 0);
+begin
+	counting60:process(clk,load,en,clrn)
+	begin
+		if(rising_edge(clk))then
+			if(en = '1') then
+				if(tempQ = "110010") then
+					tempQ <= "000000";
+				else
+					tempQ <= tempQ + 1;
+				end if;
+			end if;
+		end if;
+	end process counting60;
+	Q <= tempQ;
+	Co <= tempQ(3) and tempQ(0) and en;
+end st;

@@ -1,0 +1,668 @@
+Simulator report for PWM_LED
+Fri May 17 11:45:49 2024
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 268 nodes    ;
+; Simulation Coverage         ;      10.45 % ;
+; Total Number of Transitions ; 1371         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      10.45 % ;
+; Total nodes checked                                 ; 268          ;
+; Total output ports checked                          ; 268          ;
+; Total output ports with complete 1/0-value coverage ; 28           ;
+; Total output ports with no 1/0-value coverage       ; 238          ;
+; Total output ports with no 1-value coverage         ; 238          ;
+; Total output ports with no 0-value coverage         ; 240          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |PWM_LED|clk_count~24 ; |PWM_LED|clk_count~24 ; out              ;
+; |PWM_LED|clk_count~25 ; |PWM_LED|clk_count~25 ; out              ;
+; |PWM_LED|clk_count~26 ; |PWM_LED|clk_count~26 ; out              ;
+; |PWM_LED|clk_count~27 ; |PWM_LED|clk_count~27 ; out              ;
+; |PWM_LED|clk_count~28 ; |PWM_LED|clk_count~28 ; out              ;
+; |PWM_LED|clk_count~29 ; |PWM_LED|clk_count~29 ; out              ;
+; |PWM_LED|clk_count~30 ; |PWM_LED|clk_count~30 ; out              ;
+; |PWM_LED|clk_count~31 ; |PWM_LED|clk_count~31 ; out              ;
+; |PWM_LED|clk_count[5] ; |PWM_LED|clk_count[5] ; regout           ;
+; |PWM_LED|clk_count[4] ; |PWM_LED|clk_count[4] ; regout           ;
+; |PWM_LED|clk_count[3] ; |PWM_LED|clk_count[3] ; regout           ;
+; |PWM_LED|clk_count[2] ; |PWM_LED|clk_count[2] ; regout           ;
+; |PWM_LED|clk_count[1] ; |PWM_LED|clk_count[1] ; regout           ;
+; |PWM_LED|clk_count[0] ; |PWM_LED|clk_count[0] ; regout           ;
+; |PWM_LED|clk          ; |PWM_LED|clk          ; out              ;
+; |PWM_LED|Add0~0       ; |PWM_LED|Add0~0       ; out0             ;
+; |PWM_LED|Add0~1       ; |PWM_LED|Add0~1       ; out0             ;
+; |PWM_LED|Add0~2       ; |PWM_LED|Add0~2       ; out0             ;
+; |PWM_LED|Add0~3       ; |PWM_LED|Add0~3       ; out0             ;
+; |PWM_LED|Add0~4       ; |PWM_LED|Add0~4       ; out0             ;
+; |PWM_LED|Add0~5       ; |PWM_LED|Add0~5       ; out0             ;
+; |PWM_LED|Add0~6       ; |PWM_LED|Add0~6       ; out0             ;
+; |PWM_LED|Add0~7       ; |PWM_LED|Add0~7       ; out0             ;
+; |PWM_LED|Add0~8       ; |PWM_LED|Add0~8       ; out0             ;
+; |PWM_LED|Add0~9       ; |PWM_LED|Add0~9       ; out0             ;
+; |PWM_LED|Add0~10      ; |PWM_LED|Add0~10      ; out0             ;
+; |PWM_LED|Add0~11      ; |PWM_LED|Add0~11      ; out0             ;
+; |PWM_LED|Add0~12      ; |PWM_LED|Add0~12      ; out0             ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------+
+; Missing 1-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |PWM_LED|duty[0]       ; |PWM_LED|duty[0]       ; out              ;
+; |PWM_LED|clk_count~0   ; |PWM_LED|clk_count~0   ; out              ;
+; |PWM_LED|clk_count~1   ; |PWM_LED|clk_count~1   ; out              ;
+; |PWM_LED|clk_count~2   ; |PWM_LED|clk_count~2   ; out              ;
+; |PWM_LED|clk_count~3   ; |PWM_LED|clk_count~3   ; out              ;
+; |PWM_LED|clk_count~4   ; |PWM_LED|clk_count~4   ; out              ;
+; |PWM_LED|clk_count~5   ; |PWM_LED|clk_count~5   ; out              ;
+; |PWM_LED|clk_count~6   ; |PWM_LED|clk_count~6   ; out              ;
+; |PWM_LED|clk_count~7   ; |PWM_LED|clk_count~7   ; out              ;
+; |PWM_LED|clk_count~8   ; |PWM_LED|clk_count~8   ; out              ;
+; |PWM_LED|clk_count~9   ; |PWM_LED|clk_count~9   ; out              ;
+; |PWM_LED|clk_count~10  ; |PWM_LED|clk_count~10  ; out              ;
+; |PWM_LED|clk_count~11  ; |PWM_LED|clk_count~11  ; out              ;
+; |PWM_LED|clk_count~12  ; |PWM_LED|clk_count~12  ; out              ;
+; |PWM_LED|clk_count~13  ; |PWM_LED|clk_count~13  ; out              ;
+; |PWM_LED|clk_count~14  ; |PWM_LED|clk_count~14  ; out              ;
+; |PWM_LED|clk_count~15  ; |PWM_LED|clk_count~15  ; out              ;
+; |PWM_LED|clk_count~16  ; |PWM_LED|clk_count~16  ; out              ;
+; |PWM_LED|clk_count~17  ; |PWM_LED|clk_count~17  ; out              ;
+; |PWM_LED|clk_count~18  ; |PWM_LED|clk_count~18  ; out              ;
+; |PWM_LED|clk_count~19  ; |PWM_LED|clk_count~19  ; out              ;
+; |PWM_LED|clk_count~20  ; |PWM_LED|clk_count~20  ; out              ;
+; |PWM_LED|clk_count~21  ; |PWM_LED|clk_count~21  ; out              ;
+; |PWM_LED|clk_count~22  ; |PWM_LED|clk_count~22  ; out              ;
+; |PWM_LED|clk_count~23  ; |PWM_LED|clk_count~23  ; out              ;
+; |PWM_LED|clk_count[31] ; |PWM_LED|clk_count[31] ; regout           ;
+; |PWM_LED|clk_count[30] ; |PWM_LED|clk_count[30] ; regout           ;
+; |PWM_LED|clk_count[29] ; |PWM_LED|clk_count[29] ; regout           ;
+; |PWM_LED|clk_count[28] ; |PWM_LED|clk_count[28] ; regout           ;
+; |PWM_LED|clk_count[27] ; |PWM_LED|clk_count[27] ; regout           ;
+; |PWM_LED|clk_count[26] ; |PWM_LED|clk_count[26] ; regout           ;
+; |PWM_LED|clk_count[25] ; |PWM_LED|clk_count[25] ; regout           ;
+; |PWM_LED|clk_count[24] ; |PWM_LED|clk_count[24] ; regout           ;
+; |PWM_LED|clk_count[23] ; |PWM_LED|clk_count[23] ; regout           ;
+; |PWM_LED|clk_count[22] ; |PWM_LED|clk_count[22] ; regout           ;
+; |PWM_LED|clk_count[21] ; |PWM_LED|clk_count[21] ; regout           ;
+; |PWM_LED|clk_count[20] ; |PWM_LED|clk_count[20] ; regout           ;
+; |PWM_LED|clk_count[19] ; |PWM_LED|clk_count[19] ; regout           ;
+; |PWM_LED|clk_count[18] ; |PWM_LED|clk_count[18] ; regout           ;
+; |PWM_LED|clk_count[17] ; |PWM_LED|clk_count[17] ; regout           ;
+; |PWM_LED|clk_count[16] ; |PWM_LED|clk_count[16] ; regout           ;
+; |PWM_LED|clk_count[15] ; |PWM_LED|clk_count[15] ; regout           ;
+; |PWM_LED|clk_count[14] ; |PWM_LED|clk_count[14] ; regout           ;
+; |PWM_LED|clk_count[13] ; |PWM_LED|clk_count[13] ; regout           ;
+; |PWM_LED|clk_count[12] ; |PWM_LED|clk_count[12] ; regout           ;
+; |PWM_LED|clk_count[11] ; |PWM_LED|clk_count[11] ; regout           ;
+; |PWM_LED|clk_count[10] ; |PWM_LED|clk_count[10] ; regout           ;
+; |PWM_LED|clk_count[9]  ; |PWM_LED|clk_count[9]  ; regout           ;
+; |PWM_LED|clk_count[8]  ; |PWM_LED|clk_count[8]  ; regout           ;
+; |PWM_LED|clk_count[7]  ; |PWM_LED|clk_count[7]  ; regout           ;
+; |PWM_LED|duty[2]       ; |PWM_LED|duty[2]       ; out              ;
+; |PWM_LED|duty[0]~0     ; |PWM_LED|duty[0]~0     ; out0             ;
+; |PWM_LED|pwm_count~0   ; |PWM_LED|pwm_count~0   ; out              ;
+; |PWM_LED|pwm_count~1   ; |PWM_LED|pwm_count~1   ; out              ;
+; |PWM_LED|pwm_count~2   ; |PWM_LED|pwm_count~2   ; out              ;
+; |PWM_LED|pwm_count~3   ; |PWM_LED|pwm_count~3   ; out              ;
+; |PWM_LED|pwm_count~4   ; |PWM_LED|pwm_count~4   ; out              ;
+; |PWM_LED|pwm_count~5   ; |PWM_LED|pwm_count~5   ; out              ;
+; |PWM_LED|pwm_count~6   ; |PWM_LED|pwm_count~6   ; out              ;
+; |PWM_LED|pwm_count~7   ; |PWM_LED|pwm_count~7   ; out              ;
+; |PWM_LED|pwm_count~8   ; |PWM_LED|pwm_count~8   ; out              ;
+; |PWM_LED|pwm_count~9   ; |PWM_LED|pwm_count~9   ; out              ;
+; |PWM_LED|pwm_count~10  ; |PWM_LED|pwm_count~10  ; out              ;
+; |PWM_LED|duty~1        ; |PWM_LED|duty~1        ; out              ;
+; |PWM_LED|duty~2        ; |PWM_LED|duty~2        ; out              ;
+; |PWM_LED|duty~3        ; |PWM_LED|duty~3        ; out              ;
+; |PWM_LED|duty~4        ; |PWM_LED|duty~4        ; out              ;
+; |PWM_LED|duty~5        ; |PWM_LED|duty~5        ; out              ;
+; |PWM_LED|duty~6        ; |PWM_LED|duty~6        ; out              ;
+; |PWM_LED|duty~7        ; |PWM_LED|duty~7        ; out              ;
+; |PWM_LED|duty~8        ; |PWM_LED|duty~8        ; out              ;
+; |PWM_LED|duty~9        ; |PWM_LED|duty~9        ; out              ;
+; |PWM_LED|duty~10       ; |PWM_LED|duty~10       ; out              ;
+; |PWM_LED|duty~11       ; |PWM_LED|duty~11       ; out              ;
+; |PWM_LED|led~0         ; |PWM_LED|led~0         ; out              ;
+; |PWM_LED|duty[3]       ; |PWM_LED|duty[3]       ; out              ;
+; |PWM_LED|duty[4]       ; |PWM_LED|duty[4]       ; out              ;
+; |PWM_LED|duty[5]       ; |PWM_LED|duty[5]       ; out              ;
+; |PWM_LED|duty[6]       ; |PWM_LED|duty[6]       ; out              ;
+; |PWM_LED|duty[7]       ; |PWM_LED|duty[7]       ; out              ;
+; |PWM_LED|duty[8]       ; |PWM_LED|duty[8]       ; out              ;
+; |PWM_LED|duty[9]       ; |PWM_LED|duty[9]       ; out              ;
+; |PWM_LED|duty[10]      ; |PWM_LED|duty[10]      ; out              ;
+; |PWM_LED|pwm_count[0]  ; |PWM_LED|pwm_count[0]  ; out              ;
+; |PWM_LED|pwm_count[1]  ; |PWM_LED|pwm_count[1]  ; out              ;
+; |PWM_LED|pwm_count[2]  ; |PWM_LED|pwm_count[2]  ; out              ;
+; |PWM_LED|pwm_count[3]  ; |PWM_LED|pwm_count[3]  ; out              ;
+; |PWM_LED|pwm_count[4]  ; |PWM_LED|pwm_count[4]  ; out              ;
+; |PWM_LED|pwm_count[5]  ; |PWM_LED|pwm_count[5]  ; out              ;
+; |PWM_LED|pwm_count[6]  ; |PWM_LED|pwm_count[6]  ; out              ;
+; |PWM_LED|pwm_count[7]  ; |PWM_LED|pwm_count[7]  ; out              ;
+; |PWM_LED|pwm_count[8]  ; |PWM_LED|pwm_count[8]  ; out              ;
+; |PWM_LED|pwm_count[9]  ; |PWM_LED|pwm_count[9]  ; out              ;
+; |PWM_LED|pwm_count[10] ; |PWM_LED|pwm_count[10] ; out              ;
+; |PWM_LED|duty[1]       ; |PWM_LED|duty[1]       ; out              ;
+; |PWM_LED|enable        ; |PWM_LED|enable        ; out              ;
+; |PWM_LED|led           ; |PWM_LED|led           ; pin_out          ;
+; |PWM_LED|LessThan0~0   ; |PWM_LED|LessThan0~0   ; out0             ;
+; |PWM_LED|LessThan0~1   ; |PWM_LED|LessThan0~1   ; out0             ;
+; |PWM_LED|LessThan0~2   ; |PWM_LED|LessThan0~2   ; out0             ;
+; |PWM_LED|LessThan0~3   ; |PWM_LED|LessThan0~3   ; out0             ;
+; |PWM_LED|LessThan0~4   ; |PWM_LED|LessThan0~4   ; out0             ;
+; |PWM_LED|LessThan0~5   ; |PWM_LED|LessThan0~5   ; out0             ;
+; |PWM_LED|LessThan0~6   ; |PWM_LED|LessThan0~6   ; out0             ;
+; |PWM_LED|LessThan0~7   ; |PWM_LED|LessThan0~7   ; out0             ;
+; |PWM_LED|LessThan0~8   ; |PWM_LED|LessThan0~8   ; out0             ;
+; |PWM_LED|LessThan0~9   ; |PWM_LED|LessThan0~9   ; out0             ;
+; |PWM_LED|LessThan0~10  ; |PWM_LED|LessThan0~10  ; out0             ;
+; |PWM_LED|LessThan0~11  ; |PWM_LED|LessThan0~11  ; out0             ;
+; |PWM_LED|LessThan0~12  ; |PWM_LED|LessThan0~12  ; out0             ;
+; |PWM_LED|LessThan0~13  ; |PWM_LED|LessThan0~13  ; out0             ;
+; |PWM_LED|LessThan0~14  ; |PWM_LED|LessThan0~14  ; out0             ;
+; |PWM_LED|LessThan0~15  ; |PWM_LED|LessThan0~15  ; out0             ;
+; |PWM_LED|LessThan0~16  ; |PWM_LED|LessThan0~16  ; out0             ;
+; |PWM_LED|LessThan0~17  ; |PWM_LED|LessThan0~17  ; out0             ;
+; |PWM_LED|LessThan0~18  ; |PWM_LED|LessThan0~18  ; out0             ;
+; |PWM_LED|LessThan0~19  ; |PWM_LED|LessThan0~19  ; out0             ;
+; |PWM_LED|LessThan0~20  ; |PWM_LED|LessThan0~20  ; out0             ;
+; |PWM_LED|LessThan0~21  ; |PWM_LED|LessThan0~21  ; out0             ;
+; |PWM_LED|LessThan0~22  ; |PWM_LED|LessThan0~22  ; out0             ;
+; |PWM_LED|LessThan0~23  ; |PWM_LED|LessThan0~23  ; out0             ;
+; |PWM_LED|LessThan0~24  ; |PWM_LED|LessThan0~24  ; out0             ;
+; |PWM_LED|LessThan0~25  ; |PWM_LED|LessThan0~25  ; out0             ;
+; |PWM_LED|LessThan0~26  ; |PWM_LED|LessThan0~26  ; out0             ;
+; |PWM_LED|LessThan0~27  ; |PWM_LED|LessThan0~27  ; out0             ;
+; |PWM_LED|LessThan0~28  ; |PWM_LED|LessThan0~28  ; out0             ;
+; |PWM_LED|LessThan0~29  ; |PWM_LED|LessThan0~29  ; out0             ;
+; |PWM_LED|LessThan0~30  ; |PWM_LED|LessThan0~30  ; out0             ;
+; |PWM_LED|LessThan0~31  ; |PWM_LED|LessThan0~31  ; out0             ;
+; |PWM_LED|LessThan0~32  ; |PWM_LED|LessThan0~32  ; out0             ;
+; |PWM_LED|LessThan0~33  ; |PWM_LED|LessThan0~33  ; out0             ;
+; |PWM_LED|LessThan0~34  ; |PWM_LED|LessThan0~34  ; out0             ;
+; |PWM_LED|LessThan0~35  ; |PWM_LED|LessThan0~35  ; out0             ;
+; |PWM_LED|LessThan0~36  ; |PWM_LED|LessThan0~36  ; out0             ;
+; |PWM_LED|LessThan0~37  ; |PWM_LED|LessThan0~37  ; out0             ;
+; |PWM_LED|LessThan0~38  ; |PWM_LED|LessThan0~38  ; out0             ;
+; |PWM_LED|LessThan0~39  ; |PWM_LED|LessThan0~39  ; out0             ;
+; |PWM_LED|LessThan0~40  ; |PWM_LED|LessThan0~40  ; out0             ;
+; |PWM_LED|LessThan0~41  ; |PWM_LED|LessThan0~41  ; out0             ;
+; |PWM_LED|LessThan0~42  ; |PWM_LED|LessThan0~42  ; out0             ;
+; |PWM_LED|Add0~13       ; |PWM_LED|Add0~13       ; out0             ;
+; |PWM_LED|Add0~14       ; |PWM_LED|Add0~14       ; out0             ;
+; |PWM_LED|Add0~15       ; |PWM_LED|Add0~15       ; out0             ;
+; |PWM_LED|Add0~16       ; |PWM_LED|Add0~16       ; out0             ;
+; |PWM_LED|Add0~17       ; |PWM_LED|Add0~17       ; out0             ;
+; |PWM_LED|Add0~18       ; |PWM_LED|Add0~18       ; out0             ;
+; |PWM_LED|Add0~19       ; |PWM_LED|Add0~19       ; out0             ;
+; |PWM_LED|Add0~20       ; |PWM_LED|Add0~20       ; out0             ;
+; |PWM_LED|Add0~21       ; |PWM_LED|Add0~21       ; out0             ;
+; |PWM_LED|Add0~22       ; |PWM_LED|Add0~22       ; out0             ;
+; |PWM_LED|Add0~23       ; |PWM_LED|Add0~23       ; out0             ;
+; |PWM_LED|Add0~24       ; |PWM_LED|Add0~24       ; out0             ;
+; |PWM_LED|Add0~25       ; |PWM_LED|Add0~25       ; out0             ;
+; |PWM_LED|Add0~26       ; |PWM_LED|Add0~26       ; out0             ;
+; |PWM_LED|Add0~27       ; |PWM_LED|Add0~27       ; out0             ;
+; |PWM_LED|Add0~28       ; |PWM_LED|Add0~28       ; out0             ;
+; |PWM_LED|Add0~29       ; |PWM_LED|Add0~29       ; out0             ;
+; |PWM_LED|Add0~30       ; |PWM_LED|Add0~30       ; out0             ;
+; |PWM_LED|Add0~31       ; |PWM_LED|Add0~31       ; out0             ;
+; |PWM_LED|Add0~32       ; |PWM_LED|Add0~32       ; out0             ;
+; |PWM_LED|Add0~33       ; |PWM_LED|Add0~33       ; out0             ;
+; |PWM_LED|Add0~34       ; |PWM_LED|Add0~34       ; out0             ;
+; |PWM_LED|Add0~35       ; |PWM_LED|Add0~35       ; out0             ;
+; |PWM_LED|Add0~36       ; |PWM_LED|Add0~36       ; out0             ;
+; |PWM_LED|Add0~37       ; |PWM_LED|Add0~37       ; out0             ;
+; |PWM_LED|Add0~38       ; |PWM_LED|Add0~38       ; out0             ;
+; |PWM_LED|Add0~39       ; |PWM_LED|Add0~39       ; out0             ;
+; |PWM_LED|Add0~40       ; |PWM_LED|Add0~40       ; out0             ;
+; |PWM_LED|Add0~41       ; |PWM_LED|Add0~41       ; out0             ;
+; |PWM_LED|Add0~42       ; |PWM_LED|Add0~42       ; out0             ;
+; |PWM_LED|Add0~43       ; |PWM_LED|Add0~43       ; out0             ;
+; |PWM_LED|Add0~44       ; |PWM_LED|Add0~44       ; out0             ;
+; |PWM_LED|Add0~45       ; |PWM_LED|Add0~45       ; out0             ;
+; |PWM_LED|Add0~46       ; |PWM_LED|Add0~46       ; out0             ;
+; |PWM_LED|Add0~47       ; |PWM_LED|Add0~47       ; out0             ;
+; |PWM_LED|Add0~48       ; |PWM_LED|Add0~48       ; out0             ;
+; |PWM_LED|Add0~49       ; |PWM_LED|Add0~49       ; out0             ;
+; |PWM_LED|Add0~50       ; |PWM_LED|Add0~50       ; out0             ;
+; |PWM_LED|Add0~51       ; |PWM_LED|Add0~51       ; out0             ;
+; |PWM_LED|Add0~52       ; |PWM_LED|Add0~52       ; out0             ;
+; |PWM_LED|Add0~53       ; |PWM_LED|Add0~53       ; out0             ;
+; |PWM_LED|Add0~54       ; |PWM_LED|Add0~54       ; out0             ;
+; |PWM_LED|Add0~55       ; |PWM_LED|Add0~55       ; out0             ;
+; |PWM_LED|Add0~56       ; |PWM_LED|Add0~56       ; out0             ;
+; |PWM_LED|Add0~57       ; |PWM_LED|Add0~57       ; out0             ;
+; |PWM_LED|Add0~58       ; |PWM_LED|Add0~58       ; out0             ;
+; |PWM_LED|Add0~59       ; |PWM_LED|Add0~59       ; out0             ;
+; |PWM_LED|Add0~60       ; |PWM_LED|Add0~60       ; out0             ;
+; |PWM_LED|Add1~0        ; |PWM_LED|Add1~0        ; out0             ;
+; |PWM_LED|Add1~1        ; |PWM_LED|Add1~1        ; out0             ;
+; |PWM_LED|Add1~2        ; |PWM_LED|Add1~2        ; out0             ;
+; |PWM_LED|Add1~3        ; |PWM_LED|Add1~3        ; out0             ;
+; |PWM_LED|Add1~4        ; |PWM_LED|Add1~4        ; out0             ;
+; |PWM_LED|Add1~5        ; |PWM_LED|Add1~5        ; out0             ;
+; |PWM_LED|Add1~6        ; |PWM_LED|Add1~6        ; out0             ;
+; |PWM_LED|Add1~7        ; |PWM_LED|Add1~7        ; out0             ;
+; |PWM_LED|Add1~8        ; |PWM_LED|Add1~8        ; out0             ;
+; |PWM_LED|Add1~9        ; |PWM_LED|Add1~9        ; out0             ;
+; |PWM_LED|Add1~10       ; |PWM_LED|Add1~10       ; out0             ;
+; |PWM_LED|Add1~11       ; |PWM_LED|Add1~11       ; out0             ;
+; |PWM_LED|Add1~12       ; |PWM_LED|Add1~12       ; out0             ;
+; |PWM_LED|Add1~13       ; |PWM_LED|Add1~13       ; out0             ;
+; |PWM_LED|Add1~14       ; |PWM_LED|Add1~14       ; out0             ;
+; |PWM_LED|Add1~15       ; |PWM_LED|Add1~15       ; out0             ;
+; |PWM_LED|Add1~16       ; |PWM_LED|Add1~16       ; out0             ;
+; |PWM_LED|Add1~17       ; |PWM_LED|Add1~17       ; out0             ;
+; |PWM_LED|Add1~18       ; |PWM_LED|Add1~18       ; out0             ;
+; |PWM_LED|Add2~0        ; |PWM_LED|Add2~0        ; out0             ;
+; |PWM_LED|Add2~1        ; |PWM_LED|Add2~1        ; out0             ;
+; |PWM_LED|Add2~2        ; |PWM_LED|Add2~2        ; out0             ;
+; |PWM_LED|Add2~3        ; |PWM_LED|Add2~3        ; out0             ;
+; |PWM_LED|Add2~4        ; |PWM_LED|Add2~4        ; out0             ;
+; |PWM_LED|Add2~5        ; |PWM_LED|Add2~5        ; out0             ;
+; |PWM_LED|Add2~6        ; |PWM_LED|Add2~6        ; out0             ;
+; |PWM_LED|Add2~7        ; |PWM_LED|Add2~7        ; out0             ;
+; |PWM_LED|Add2~8        ; |PWM_LED|Add2~8        ; out0             ;
+; |PWM_LED|Add2~9        ; |PWM_LED|Add2~9        ; out0             ;
+; |PWM_LED|Add2~10       ; |PWM_LED|Add2~10       ; out0             ;
+; |PWM_LED|Add2~11       ; |PWM_LED|Add2~11       ; out0             ;
+; |PWM_LED|Add2~12       ; |PWM_LED|Add2~12       ; out0             ;
+; |PWM_LED|Add2~13       ; |PWM_LED|Add2~13       ; out0             ;
+; |PWM_LED|Add2~14       ; |PWM_LED|Add2~14       ; out0             ;
+; |PWM_LED|Add2~15       ; |PWM_LED|Add2~15       ; out0             ;
+; |PWM_LED|Add2~16       ; |PWM_LED|Add2~16       ; out0             ;
+; |PWM_LED|Add2~17       ; |PWM_LED|Add2~17       ; out0             ;
+; |PWM_LED|Add2~18       ; |PWM_LED|Add2~18       ; out0             ;
+; |PWM_LED|Add2~19       ; |PWM_LED|Add2~19       ; out0             ;
+; |PWM_LED|Add2~20       ; |PWM_LED|Add2~20       ; out0             ;
+; |PWM_LED|Add2~21       ; |PWM_LED|Add2~21       ; out0             ;
+; |PWM_LED|Add2~22       ; |PWM_LED|Add2~22       ; out0             ;
+; |PWM_LED|Add2~23       ; |PWM_LED|Add2~23       ; out0             ;
+; |PWM_LED|Add2~24       ; |PWM_LED|Add2~24       ; out0             ;
+; |PWM_LED|Add2~25       ; |PWM_LED|Add2~25       ; out0             ;
+; |PWM_LED|Add2~26       ; |PWM_LED|Add2~26       ; out0             ;
+; |PWM_LED|Add2~27       ; |PWM_LED|Add2~27       ; out0             ;
+; |PWM_LED|Equal0~0      ; |PWM_LED|Equal0~0      ; out0             ;
+; |PWM_LED|Equal2~0      ; |PWM_LED|Equal2~0      ; out0             ;
+; |PWM_LED|Equal3~0      ; |PWM_LED|Equal3~0      ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |PWM_LED|duty[0]       ; |PWM_LED|duty[0]       ; out              ;
+; |PWM_LED|clk_count~0   ; |PWM_LED|clk_count~0   ; out              ;
+; |PWM_LED|clk_count~1   ; |PWM_LED|clk_count~1   ; out              ;
+; |PWM_LED|clk_count~2   ; |PWM_LED|clk_count~2   ; out              ;
+; |PWM_LED|clk_count~3   ; |PWM_LED|clk_count~3   ; out              ;
+; |PWM_LED|clk_count~4   ; |PWM_LED|clk_count~4   ; out              ;
+; |PWM_LED|clk_count~5   ; |PWM_LED|clk_count~5   ; out              ;
+; |PWM_LED|clk_count~6   ; |PWM_LED|clk_count~6   ; out              ;
+; |PWM_LED|clk_count~7   ; |PWM_LED|clk_count~7   ; out              ;
+; |PWM_LED|clk_count~8   ; |PWM_LED|clk_count~8   ; out              ;
+; |PWM_LED|clk_count~9   ; |PWM_LED|clk_count~9   ; out              ;
+; |PWM_LED|clk_count~10  ; |PWM_LED|clk_count~10  ; out              ;
+; |PWM_LED|clk_count~11  ; |PWM_LED|clk_count~11  ; out              ;
+; |PWM_LED|clk_count~12  ; |PWM_LED|clk_count~12  ; out              ;
+; |PWM_LED|clk_count~13  ; |PWM_LED|clk_count~13  ; out              ;
+; |PWM_LED|clk_count~14  ; |PWM_LED|clk_count~14  ; out              ;
+; |PWM_LED|clk_count~15  ; |PWM_LED|clk_count~15  ; out              ;
+; |PWM_LED|clk_count~16  ; |PWM_LED|clk_count~16  ; out              ;
+; |PWM_LED|clk_count~17  ; |PWM_LED|clk_count~17  ; out              ;
+; |PWM_LED|clk_count~18  ; |PWM_LED|clk_count~18  ; out              ;
+; |PWM_LED|clk_count~19  ; |PWM_LED|clk_count~19  ; out              ;
+; |PWM_LED|clk_count~20  ; |PWM_LED|clk_count~20  ; out              ;
+; |PWM_LED|clk_count~21  ; |PWM_LED|clk_count~21  ; out              ;
+; |PWM_LED|clk_count~22  ; |PWM_LED|clk_count~22  ; out              ;
+; |PWM_LED|clk_count~23  ; |PWM_LED|clk_count~23  ; out              ;
+; |PWM_LED|clk_count[31] ; |PWM_LED|clk_count[31] ; regout           ;
+; |PWM_LED|clk_count[30] ; |PWM_LED|clk_count[30] ; regout           ;
+; |PWM_LED|clk_count[29] ; |PWM_LED|clk_count[29] ; regout           ;
+; |PWM_LED|clk_count[28] ; |PWM_LED|clk_count[28] ; regout           ;
+; |PWM_LED|clk_count[27] ; |PWM_LED|clk_count[27] ; regout           ;
+; |PWM_LED|clk_count[26] ; |PWM_LED|clk_count[26] ; regout           ;
+; |PWM_LED|clk_count[25] ; |PWM_LED|clk_count[25] ; regout           ;
+; |PWM_LED|clk_count[24] ; |PWM_LED|clk_count[24] ; regout           ;
+; |PWM_LED|clk_count[23] ; |PWM_LED|clk_count[23] ; regout           ;
+; |PWM_LED|clk_count[22] ; |PWM_LED|clk_count[22] ; regout           ;
+; |PWM_LED|clk_count[21] ; |PWM_LED|clk_count[21] ; regout           ;
+; |PWM_LED|clk_count[20] ; |PWM_LED|clk_count[20] ; regout           ;
+; |PWM_LED|clk_count[19] ; |PWM_LED|clk_count[19] ; regout           ;
+; |PWM_LED|clk_count[18] ; |PWM_LED|clk_count[18] ; regout           ;
+; |PWM_LED|clk_count[17] ; |PWM_LED|clk_count[17] ; regout           ;
+; |PWM_LED|clk_count[16] ; |PWM_LED|clk_count[16] ; regout           ;
+; |PWM_LED|clk_count[15] ; |PWM_LED|clk_count[15] ; regout           ;
+; |PWM_LED|clk_count[14] ; |PWM_LED|clk_count[14] ; regout           ;
+; |PWM_LED|clk_count[13] ; |PWM_LED|clk_count[13] ; regout           ;
+; |PWM_LED|clk_count[12] ; |PWM_LED|clk_count[12] ; regout           ;
+; |PWM_LED|clk_count[11] ; |PWM_LED|clk_count[11] ; regout           ;
+; |PWM_LED|clk_count[10] ; |PWM_LED|clk_count[10] ; regout           ;
+; |PWM_LED|clk_count[9]  ; |PWM_LED|clk_count[9]  ; regout           ;
+; |PWM_LED|clk_count[8]  ; |PWM_LED|clk_count[8]  ; regout           ;
+; |PWM_LED|clk_count[7]  ; |PWM_LED|clk_count[7]  ; regout           ;
+; |PWM_LED|clk_count[6]  ; |PWM_LED|clk_count[6]  ; regout           ;
+; |PWM_LED|duty[2]       ; |PWM_LED|duty[2]       ; out              ;
+; |PWM_LED|duty[0]~0     ; |PWM_LED|duty[0]~0     ; out0             ;
+; |PWM_LED|pwm_count~0   ; |PWM_LED|pwm_count~0   ; out              ;
+; |PWM_LED|pwm_count~1   ; |PWM_LED|pwm_count~1   ; out              ;
+; |PWM_LED|pwm_count~2   ; |PWM_LED|pwm_count~2   ; out              ;
+; |PWM_LED|pwm_count~3   ; |PWM_LED|pwm_count~3   ; out              ;
+; |PWM_LED|pwm_count~4   ; |PWM_LED|pwm_count~4   ; out              ;
+; |PWM_LED|pwm_count~5   ; |PWM_LED|pwm_count~5   ; out              ;
+; |PWM_LED|pwm_count~6   ; |PWM_LED|pwm_count~6   ; out              ;
+; |PWM_LED|pwm_count~7   ; |PWM_LED|pwm_count~7   ; out              ;
+; |PWM_LED|pwm_count~8   ; |PWM_LED|pwm_count~8   ; out              ;
+; |PWM_LED|pwm_count~9   ; |PWM_LED|pwm_count~9   ; out              ;
+; |PWM_LED|pwm_count~10  ; |PWM_LED|pwm_count~10  ; out              ;
+; |PWM_LED|duty~1        ; |PWM_LED|duty~1        ; out              ;
+; |PWM_LED|duty~2        ; |PWM_LED|duty~2        ; out              ;
+; |PWM_LED|duty~3        ; |PWM_LED|duty~3        ; out              ;
+; |PWM_LED|duty~4        ; |PWM_LED|duty~4        ; out              ;
+; |PWM_LED|duty~5        ; |PWM_LED|duty~5        ; out              ;
+; |PWM_LED|duty~6        ; |PWM_LED|duty~6        ; out              ;
+; |PWM_LED|duty~7        ; |PWM_LED|duty~7        ; out              ;
+; |PWM_LED|duty~8        ; |PWM_LED|duty~8        ; out              ;
+; |PWM_LED|duty~9        ; |PWM_LED|duty~9        ; out              ;
+; |PWM_LED|duty~10       ; |PWM_LED|duty~10       ; out              ;
+; |PWM_LED|duty~11       ; |PWM_LED|duty~11       ; out              ;
+; |PWM_LED|led~0         ; |PWM_LED|led~0         ; out              ;
+; |PWM_LED|duty[3]       ; |PWM_LED|duty[3]       ; out              ;
+; |PWM_LED|duty[4]       ; |PWM_LED|duty[4]       ; out              ;
+; |PWM_LED|duty[5]       ; |PWM_LED|duty[5]       ; out              ;
+; |PWM_LED|duty[6]       ; |PWM_LED|duty[6]       ; out              ;
+; |PWM_LED|duty[7]       ; |PWM_LED|duty[7]       ; out              ;
+; |PWM_LED|duty[8]       ; |PWM_LED|duty[8]       ; out              ;
+; |PWM_LED|duty[9]       ; |PWM_LED|duty[9]       ; out              ;
+; |PWM_LED|duty[10]      ; |PWM_LED|duty[10]      ; out              ;
+; |PWM_LED|pwm_count[0]  ; |PWM_LED|pwm_count[0]  ; out              ;
+; |PWM_LED|pwm_count[1]  ; |PWM_LED|pwm_count[1]  ; out              ;
+; |PWM_LED|pwm_count[2]  ; |PWM_LED|pwm_count[2]  ; out              ;
+; |PWM_LED|pwm_count[3]  ; |PWM_LED|pwm_count[3]  ; out              ;
+; |PWM_LED|pwm_count[4]  ; |PWM_LED|pwm_count[4]  ; out              ;
+; |PWM_LED|pwm_count[5]  ; |PWM_LED|pwm_count[5]  ; out              ;
+; |PWM_LED|pwm_count[6]  ; |PWM_LED|pwm_count[6]  ; out              ;
+; |PWM_LED|pwm_count[7]  ; |PWM_LED|pwm_count[7]  ; out              ;
+; |PWM_LED|pwm_count[8]  ; |PWM_LED|pwm_count[8]  ; out              ;
+; |PWM_LED|pwm_count[9]  ; |PWM_LED|pwm_count[9]  ; out              ;
+; |PWM_LED|pwm_count[10] ; |PWM_LED|pwm_count[10] ; out              ;
+; |PWM_LED|duty[1]       ; |PWM_LED|duty[1]       ; out              ;
+; |PWM_LED|enable        ; |PWM_LED|enable        ; out              ;
+; |PWM_LED|led           ; |PWM_LED|led           ; pin_out          ;
+; |PWM_LED|LessThan0~0   ; |PWM_LED|LessThan0~0   ; out0             ;
+; |PWM_LED|LessThan0~1   ; |PWM_LED|LessThan0~1   ; out0             ;
+; |PWM_LED|LessThan0~2   ; |PWM_LED|LessThan0~2   ; out0             ;
+; |PWM_LED|LessThan0~3   ; |PWM_LED|LessThan0~3   ; out0             ;
+; |PWM_LED|LessThan0~4   ; |PWM_LED|LessThan0~4   ; out0             ;
+; |PWM_LED|LessThan0~5   ; |PWM_LED|LessThan0~5   ; out0             ;
+; |PWM_LED|LessThan0~6   ; |PWM_LED|LessThan0~6   ; out0             ;
+; |PWM_LED|LessThan0~7   ; |PWM_LED|LessThan0~7   ; out0             ;
+; |PWM_LED|LessThan0~8   ; |PWM_LED|LessThan0~8   ; out0             ;
+; |PWM_LED|LessThan0~9   ; |PWM_LED|LessThan0~9   ; out0             ;
+; |PWM_LED|LessThan0~10  ; |PWM_LED|LessThan0~10  ; out0             ;
+; |PWM_LED|LessThan0~11  ; |PWM_LED|LessThan0~11  ; out0             ;
+; |PWM_LED|LessThan0~12  ; |PWM_LED|LessThan0~12  ; out0             ;
+; |PWM_LED|LessThan0~13  ; |PWM_LED|LessThan0~13  ; out0             ;
+; |PWM_LED|LessThan0~14  ; |PWM_LED|LessThan0~14  ; out0             ;
+; |PWM_LED|LessThan0~15  ; |PWM_LED|LessThan0~15  ; out0             ;
+; |PWM_LED|LessThan0~16  ; |PWM_LED|LessThan0~16  ; out0             ;
+; |PWM_LED|LessThan0~17  ; |PWM_LED|LessThan0~17  ; out0             ;
+; |PWM_LED|LessThan0~18  ; |PWM_LED|LessThan0~18  ; out0             ;
+; |PWM_LED|LessThan0~19  ; |PWM_LED|LessThan0~19  ; out0             ;
+; |PWM_LED|LessThan0~20  ; |PWM_LED|LessThan0~20  ; out0             ;
+; |PWM_LED|LessThan0~21  ; |PWM_LED|LessThan0~21  ; out0             ;
+; |PWM_LED|LessThan0~22  ; |PWM_LED|LessThan0~22  ; out0             ;
+; |PWM_LED|LessThan0~23  ; |PWM_LED|LessThan0~23  ; out0             ;
+; |PWM_LED|LessThan0~24  ; |PWM_LED|LessThan0~24  ; out0             ;
+; |PWM_LED|LessThan0~25  ; |PWM_LED|LessThan0~25  ; out0             ;
+; |PWM_LED|LessThan0~26  ; |PWM_LED|LessThan0~26  ; out0             ;
+; |PWM_LED|LessThan0~27  ; |PWM_LED|LessThan0~27  ; out0             ;
+; |PWM_LED|LessThan0~28  ; |PWM_LED|LessThan0~28  ; out0             ;
+; |PWM_LED|LessThan0~29  ; |PWM_LED|LessThan0~29  ; out0             ;
+; |PWM_LED|LessThan0~30  ; |PWM_LED|LessThan0~30  ; out0             ;
+; |PWM_LED|LessThan0~31  ; |PWM_LED|LessThan0~31  ; out0             ;
+; |PWM_LED|LessThan0~32  ; |PWM_LED|LessThan0~32  ; out0             ;
+; |PWM_LED|LessThan0~33  ; |PWM_LED|LessThan0~33  ; out0             ;
+; |PWM_LED|LessThan0~34  ; |PWM_LED|LessThan0~34  ; out0             ;
+; |PWM_LED|LessThan0~35  ; |PWM_LED|LessThan0~35  ; out0             ;
+; |PWM_LED|LessThan0~36  ; |PWM_LED|LessThan0~36  ; out0             ;
+; |PWM_LED|LessThan0~37  ; |PWM_LED|LessThan0~37  ; out0             ;
+; |PWM_LED|LessThan0~38  ; |PWM_LED|LessThan0~38  ; out0             ;
+; |PWM_LED|LessThan0~39  ; |PWM_LED|LessThan0~39  ; out0             ;
+; |PWM_LED|LessThan0~40  ; |PWM_LED|LessThan0~40  ; out0             ;
+; |PWM_LED|LessThan0~41  ; |PWM_LED|LessThan0~41  ; out0             ;
+; |PWM_LED|LessThan0~42  ; |PWM_LED|LessThan0~42  ; out0             ;
+; |PWM_LED|Add0~13       ; |PWM_LED|Add0~13       ; out0             ;
+; |PWM_LED|Add0~14       ; |PWM_LED|Add0~14       ; out0             ;
+; |PWM_LED|Add0~15       ; |PWM_LED|Add0~15       ; out0             ;
+; |PWM_LED|Add0~16       ; |PWM_LED|Add0~16       ; out0             ;
+; |PWM_LED|Add0~17       ; |PWM_LED|Add0~17       ; out0             ;
+; |PWM_LED|Add0~18       ; |PWM_LED|Add0~18       ; out0             ;
+; |PWM_LED|Add0~19       ; |PWM_LED|Add0~19       ; out0             ;
+; |PWM_LED|Add0~20       ; |PWM_LED|Add0~20       ; out0             ;
+; |PWM_LED|Add0~21       ; |PWM_LED|Add0~21       ; out0             ;
+; |PWM_LED|Add0~22       ; |PWM_LED|Add0~22       ; out0             ;
+; |PWM_LED|Add0~23       ; |PWM_LED|Add0~23       ; out0             ;
+; |PWM_LED|Add0~24       ; |PWM_LED|Add0~24       ; out0             ;
+; |PWM_LED|Add0~25       ; |PWM_LED|Add0~25       ; out0             ;
+; |PWM_LED|Add0~26       ; |PWM_LED|Add0~26       ; out0             ;
+; |PWM_LED|Add0~27       ; |PWM_LED|Add0~27       ; out0             ;
+; |PWM_LED|Add0~28       ; |PWM_LED|Add0~28       ; out0             ;
+; |PWM_LED|Add0~29       ; |PWM_LED|Add0~29       ; out0             ;
+; |PWM_LED|Add0~30       ; |PWM_LED|Add0~30       ; out0             ;
+; |PWM_LED|Add0~31       ; |PWM_LED|Add0~31       ; out0             ;
+; |PWM_LED|Add0~32       ; |PWM_LED|Add0~32       ; out0             ;
+; |PWM_LED|Add0~33       ; |PWM_LED|Add0~33       ; out0             ;
+; |PWM_LED|Add0~34       ; |PWM_LED|Add0~34       ; out0             ;
+; |PWM_LED|Add0~35       ; |PWM_LED|Add0~35       ; out0             ;
+; |PWM_LED|Add0~36       ; |PWM_LED|Add0~36       ; out0             ;
+; |PWM_LED|Add0~37       ; |PWM_LED|Add0~37       ; out0             ;
+; |PWM_LED|Add0~38       ; |PWM_LED|Add0~38       ; out0             ;
+; |PWM_LED|Add0~39       ; |PWM_LED|Add0~39       ; out0             ;
+; |PWM_LED|Add0~40       ; |PWM_LED|Add0~40       ; out0             ;
+; |PWM_LED|Add0~41       ; |PWM_LED|Add0~41       ; out0             ;
+; |PWM_LED|Add0~42       ; |PWM_LED|Add0~42       ; out0             ;
+; |PWM_LED|Add0~43       ; |PWM_LED|Add0~43       ; out0             ;
+; |PWM_LED|Add0~44       ; |PWM_LED|Add0~44       ; out0             ;
+; |PWM_LED|Add0~45       ; |PWM_LED|Add0~45       ; out0             ;
+; |PWM_LED|Add0~46       ; |PWM_LED|Add0~46       ; out0             ;
+; |PWM_LED|Add0~47       ; |PWM_LED|Add0~47       ; out0             ;
+; |PWM_LED|Add0~48       ; |PWM_LED|Add0~48       ; out0             ;
+; |PWM_LED|Add0~49       ; |PWM_LED|Add0~49       ; out0             ;
+; |PWM_LED|Add0~50       ; |PWM_LED|Add0~50       ; out0             ;
+; |PWM_LED|Add0~51       ; |PWM_LED|Add0~51       ; out0             ;
+; |PWM_LED|Add0~52       ; |PWM_LED|Add0~52       ; out0             ;
+; |PWM_LED|Add0~53       ; |PWM_LED|Add0~53       ; out0             ;
+; |PWM_LED|Add0~54       ; |PWM_LED|Add0~54       ; out0             ;
+; |PWM_LED|Add0~55       ; |PWM_LED|Add0~55       ; out0             ;
+; |PWM_LED|Add0~56       ; |PWM_LED|Add0~56       ; out0             ;
+; |PWM_LED|Add0~57       ; |PWM_LED|Add0~57       ; out0             ;
+; |PWM_LED|Add0~58       ; |PWM_LED|Add0~58       ; out0             ;
+; |PWM_LED|Add0~59       ; |PWM_LED|Add0~59       ; out0             ;
+; |PWM_LED|Add0~60       ; |PWM_LED|Add0~60       ; out0             ;
+; |PWM_LED|Add1~0        ; |PWM_LED|Add1~0        ; out0             ;
+; |PWM_LED|Add1~1        ; |PWM_LED|Add1~1        ; out0             ;
+; |PWM_LED|Add1~2        ; |PWM_LED|Add1~2        ; out0             ;
+; |PWM_LED|Add1~3        ; |PWM_LED|Add1~3        ; out0             ;
+; |PWM_LED|Add1~4        ; |PWM_LED|Add1~4        ; out0             ;
+; |PWM_LED|Add1~5        ; |PWM_LED|Add1~5        ; out0             ;
+; |PWM_LED|Add1~6        ; |PWM_LED|Add1~6        ; out0             ;
+; |PWM_LED|Add1~7        ; |PWM_LED|Add1~7        ; out0             ;
+; |PWM_LED|Add1~8        ; |PWM_LED|Add1~8        ; out0             ;
+; |PWM_LED|Add1~9        ; |PWM_LED|Add1~9        ; out0             ;
+; |PWM_LED|Add1~10       ; |PWM_LED|Add1~10       ; out0             ;
+; |PWM_LED|Add1~11       ; |PWM_LED|Add1~11       ; out0             ;
+; |PWM_LED|Add1~12       ; |PWM_LED|Add1~12       ; out0             ;
+; |PWM_LED|Add1~13       ; |PWM_LED|Add1~13       ; out0             ;
+; |PWM_LED|Add1~14       ; |PWM_LED|Add1~14       ; out0             ;
+; |PWM_LED|Add1~15       ; |PWM_LED|Add1~15       ; out0             ;
+; |PWM_LED|Add1~16       ; |PWM_LED|Add1~16       ; out0             ;
+; |PWM_LED|Add1~17       ; |PWM_LED|Add1~17       ; out0             ;
+; |PWM_LED|Add1~18       ; |PWM_LED|Add1~18       ; out0             ;
+; |PWM_LED|Add2~0        ; |PWM_LED|Add2~0        ; out0             ;
+; |PWM_LED|Add2~1        ; |PWM_LED|Add2~1        ; out0             ;
+; |PWM_LED|Add2~2        ; |PWM_LED|Add2~2        ; out0             ;
+; |PWM_LED|Add2~3        ; |PWM_LED|Add2~3        ; out0             ;
+; |PWM_LED|Add2~4        ; |PWM_LED|Add2~4        ; out0             ;
+; |PWM_LED|Add2~5        ; |PWM_LED|Add2~5        ; out0             ;
+; |PWM_LED|Add2~6        ; |PWM_LED|Add2~6        ; out0             ;
+; |PWM_LED|Add2~7        ; |PWM_LED|Add2~7        ; out0             ;
+; |PWM_LED|Add2~8        ; |PWM_LED|Add2~8        ; out0             ;
+; |PWM_LED|Add2~9        ; |PWM_LED|Add2~9        ; out0             ;
+; |PWM_LED|Add2~10       ; |PWM_LED|Add2~10       ; out0             ;
+; |PWM_LED|Add2~11       ; |PWM_LED|Add2~11       ; out0             ;
+; |PWM_LED|Add2~12       ; |PWM_LED|Add2~12       ; out0             ;
+; |PWM_LED|Add2~13       ; |PWM_LED|Add2~13       ; out0             ;
+; |PWM_LED|Add2~14       ; |PWM_LED|Add2~14       ; out0             ;
+; |PWM_LED|Add2~15       ; |PWM_LED|Add2~15       ; out0             ;
+; |PWM_LED|Add2~16       ; |PWM_LED|Add2~16       ; out0             ;
+; |PWM_LED|Add2~17       ; |PWM_LED|Add2~17       ; out0             ;
+; |PWM_LED|Add2~18       ; |PWM_LED|Add2~18       ; out0             ;
+; |PWM_LED|Add2~19       ; |PWM_LED|Add2~19       ; out0             ;
+; |PWM_LED|Add2~20       ; |PWM_LED|Add2~20       ; out0             ;
+; |PWM_LED|Add2~21       ; |PWM_LED|Add2~21       ; out0             ;
+; |PWM_LED|Add2~22       ; |PWM_LED|Add2~22       ; out0             ;
+; |PWM_LED|Add2~23       ; |PWM_LED|Add2~23       ; out0             ;
+; |PWM_LED|Add2~24       ; |PWM_LED|Add2~24       ; out0             ;
+; |PWM_LED|Add2~25       ; |PWM_LED|Add2~25       ; out0             ;
+; |PWM_LED|Add2~26       ; |PWM_LED|Add2~26       ; out0             ;
+; |PWM_LED|Add2~27       ; |PWM_LED|Add2~27       ; out0             ;
+; |PWM_LED|Equal0~0      ; |PWM_LED|Equal0~0      ; out0             ;
+; |PWM_LED|Equal1~0      ; |PWM_LED|Equal1~0      ; out0             ;
+; |PWM_LED|Equal2~0      ; |PWM_LED|Equal2~0      ; out0             ;
+; |PWM_LED|Equal3~0      ; |PWM_LED|Equal3~0      ; out0             ;
++------------------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri May 17 11:45:49 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off PWM_LED -c PWM_LED
+Info: Using vector source file "c:/altera/91sp2/quartus/PWM_LED/PWM_LED.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      10.45 %
+Info: Number of transitions in simulation is 1371
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 152 megabytes
+    Info: Processing ended: Fri May 17 11:45:49 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,83 @@
+|counter60
+load => counter10:inst3.load
+load => counter6:inst.load
+en => counter10:inst3.en
+clrn => counter10:inst3.clrn
+clrn => counter6:inst.clrn
+clk => counter10:inst3.clk
+clk => counter6:inst.clk
+Da[0] => counter10:inst3.D[0]
+Da[1] => counter10:inst3.D[1]
+Da[2] => counter10:inst3.D[2]
+Da[3] => counter10:inst3.D[3]
+Db[0] => counter6:inst.D[0]
+Db[1] => counter6:inst.D[1]
+Db[2] => counter6:inst.D[2]
+Co <= counter6:inst.Co
+qa[0] <= counter10:inst3.q[0]
+qa[1] <= counter10:inst3.q[1]
+qa[2] <= counter10:inst3.q[2]
+qa[3] <= counter10:inst3.q[3]
+qb[0] <= counter6:inst.q[0]
+qb[1] <= counter6:inst.q[1]
+qb[2] <= counter6:inst.q[2]
+
+
+|counter60|counter10:inst3
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => Co.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => Co.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => Co.OUTPUTSELECT
+clk => Co~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+D[0] => count.DATAB
+D[1] => count.DATAB
+D[2] => count.DATAB
+D[3] => count.DATAB
+Q[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter60|counter6:inst
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => Co.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => Co.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => count.OUTPUTSELECT
+clrn => Co.OUTPUTSELECT
+clk => Co~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+D[0] => count.DATAB
+D[1] => count.DATAB
+D[2] => count.DATAB
+Q[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

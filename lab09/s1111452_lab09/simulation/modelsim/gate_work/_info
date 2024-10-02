@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Administrator\Downloads\s1111452_lab09\simulation\modelsim
+vcounter60
+IJ46PkmWj[:ZG376bG=<HK1
+Vg=Zl7Q:DbbORh>Kl<o6P41
+w1715147870
+8counter60.vo
+Fcounter60.vo
+L0 31
+Z1 OV;L;6.5b;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+!s100 a9093XFaC`oPP[f55e3?e3
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vtest
+!s100 :^1EG;eD8Y`z43GU99?:[0
+INMGbB37N@nLZBnm[MKTnH1
+Vk<3<[f=78GX=_HO53D;7>3
+w1714706881
+8C:/Users/Administrator/Downloads/s1111452_lab09/test.v
+FC:/Users/Administrator/Downloads/s1111452_lab09/test.v
+L0 2
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+!s92 -vlog01compat -work work +incdir+C:/Users/Administrator/Downloads/s1111452_lab09 -O0
