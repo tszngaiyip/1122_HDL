@@ -1,37 +1,29 @@
-# Lab 15 - 紅綠燈控制器 / Traffic Light Controller
+# Lab 15 - 紅綠燈控制器
 
-## 實驗目標 / Objective
+## 實驗目標
 
 使用VHDL製作七段顯示器，完成紅綠燈電路
 1. LED[0]模擬綠燈、LED[1]模擬黃燈、LED[2]模擬紅燈
 2. HEX0 模擬十進位倒數計時器
 
-Design a seven-segment display using VHDL to implement a traffic light circuit
-1. LED[0] simulates green light, LED[1] simulates yellow light, LED[2] simulates red light
-2. HEX0 simulates decimal countdown timer
-
-## 功能描述 / Functionality Description
+## 功能描述
 
 **紅綠燈控制器 (Traffic Light Controller)** 是一個模擬交通信號燈的數位控制系統，通過狀態機控制燈號切換和倒數計時功能。
 
-The Traffic Light Controller is a digital control system that simulates traffic signal lights, using state machines to control light switching and countdown timing functions.
-
-### 交通燈序列 / Traffic Light Sequence
+### 交通燈序列
 
 標準的交通燈控制序列：
-
-Standard traffic light control sequence:
 
 ```
 綠燈 (Green) → 黃燈 (Yellow) → 紅燈 (Red) → 綠燈 (Green) → ...
 ```
 
-### 系統特性 / System Characteristics
+### 系統特性
 
-- **狀態機控制 / State Machine Control**: 有限狀態機管理燈號轉換
-- **倒數計時 / Countdown Timer**: 每個狀態顯示剩餘時間
-- **可調時間 / Adjustable Timing**: 可設定各燈號持續時間
-- **緊急模式 / Emergency Mode**: 支援緊急車輛通過控制
+- **狀態機控制**: 有限狀態機管理燈號轉換
+- **倒數計時**: 每個狀態顯示剩餘時間
+- **可調時間**: 可設定各燈號持續時間
+- **緊急模式**: 支援緊急車輛通過控制
 
 ## 設計規格 / Design Specifications
 
