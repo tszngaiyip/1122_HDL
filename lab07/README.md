@@ -1,23 +1,19 @@
-# Lab 07 - ALU 設計 / ALU Design
+# Lab 07 - ALU 設計
 
-## 實驗目標 / Objective
+## 實驗目標
 
 使用VHDL製作ALU算數邏輯運算單元，並製作testbench進行功能驗證
 
-Design an ALU (Arithmetic Logic Unit) using VHDL and create testbench for functional verification
-
-## ALU 概述 / ALU Overview
+## ALU 概述
 
 算數邏輯運算單元(ALU)是處理器的核心組件，負責執行各種算數和邏輯運算。
 
-The Arithmetic Logic Unit (ALU) is a core component of processors, responsible for performing various arithmetic and logical operations.
+### 功能特性
 
-### 功能特性 / Functional Features
-
-- **算數運算 / Arithmetic Operations**: 加法、減法、乘法等
-- **邏輯運算 / Logic Operations**: AND、OR、XOR、NOT等  
-- **比較運算 / Comparison Operations**: 等於、大於、小於等
-- **移位運算 / Shift Operations**: 左移、右移等
+- **算數運算**: 加法、減法、乘法等
+- **邏輯運算**: AND、OR、XOR、NOT等  
+- **比較運算**: 等於、大於、小於等
+- **移位運算**: 左移、右移等
 
 ## 設計規格 / Design Specifications
 
@@ -28,7 +24,7 @@ A, B        : in  std_logic_vector(7 downto 0);  -- 8-bit 運算元
 ALU_Sel     : in  std_logic_vector(3 downto 0);  -- 4-bit 操作碼
 ```
 
-### 輸出信號 / Output Signals
+### 輸出信號
 
 ```vhdl
 ALU_Out     : out std_logic_vector(7 downto 0);  -- 8-bit 運算結果
@@ -37,21 +33,21 @@ Zero        : out std_logic;                     -- 零旗標
 Overflow    : out std_logic;                     -- 溢位旗標
 ```
 
-### 運算功能表 / Operation Function Table
+### 運算功能表
 
-| ALU_Sel | 運算 / Operation | 功能描述 / Function Description |
-|---------|------------------|--------------------------------|
-| 0000    | A + B           | 8-bit 加法 / 8-bit Addition |
-| 0001    | A - B           | 8-bit 減法 / 8-bit Subtraction |
-| 0010    | A * B           | 8-bit 乘法 / 8-bit Multiplication |
-| 0011    | A / B           | 8-bit 除法 / 8-bit Division |
-| 0100    | A AND B         | 位元 AND 運算 |
-| 0101    | A OR B          | 位元 OR 運算 |
-| 0110    | A XOR B         | 位元 XOR 運算 |
-| 0111    | NOT A           | 位元 NOT 運算 |
-| 1000    | A << 1          | A 左移一位 / Left shift A by 1 |
-| 1001    | A >> 1          | A 右移一位 / Right shift A by 1 |
-| 1010    | A == B          | 相等比較 / Equality comparison |
+| ALU_Sel | 運算 | 功能描述 |
+|---------|------|---------|
+| 0000 | A + B | 8-bit 加法 |
+| 0001 | A - B | 8-bit 減法 |
+| 0010 | A * B | 8-bit 乘法 |
+| 0011 | A / B | 8-bit 除法 |
+| 0100 | A AND B | 位元 AND 運算 |
+| 0101 | A OR B | 位元 OR 運算 |
+| 0110 | A XOR B | 位元 XOR 運算 |
+| 0111 | NOT A | 位元 NOT 運算 |
+| 1000 | A << 1 | A 左移一位 |
+| 1001 | A >> 1 | A 右移一位 |
+| 1010 | A == B | 相等比較 |
 | 1011    | A > B           | 大於比較 / Greater than comparison |
 | 1100    | A < B           | 小於比較 / Less than comparison |
 | 1101    | Reserved        | 保留 / Reserved |
