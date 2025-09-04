@@ -1,20 +1,14 @@
-# Lab 11 - PWM呼吸燈 / PWM Breathing LED
+# Lab 11 - PWM呼吸燈
 
-## 實驗目標 / Objective
+## 實驗目標
 
 使用VHDL製作自動調節LED亮度的呼吸燈：
 1. LED 單方向的亮度變化
 2. LED 逐漸變亮然後再逐漸變暗
 
-Design an automatic LED brightness adjustment breathing light using VHDL:
-1. LED unidirectional brightness variation
-2. LED gradually brightens then gradually dims
-
-## 功能描述 / Functionality Description
+## 功能描述
 
 **呼吸燈 (Breathing LED)** 是一種模擬人類呼吸節奏的LED亮度控制效果，通過PWM技術實現LED亮度的週期性漸變。
-
-Breathing LED is an LED brightness control effect that simulates human breathing rhythm, achieving periodic gradual changes in LED brightness through PWM technology.
 
 ### 呼吸效果特性 / Breathing Effect Characteristics
 
@@ -286,28 +280,3 @@ lab11/
 - Timing division and counter design
 - Multi-module hierarchical design methodology
 - Digital implementation of analog effects
-
-## 應用擴展 / Application Extensions
-
-### 1. 多LED呼吸陣列 / Multi-LED Breathing Array
-- 相位偏移的呼吸效果
-- 波浪式呼吸模式
-- 群組同步控制
-
-### 2. 感應式呼吸燈 / Sensor-based Breathing Light
-- 環境光感應自動調節
-- 人體感應觸發模式
-- 溫度響應呼吸頻率
-
-### 3. 音樂同步呼吸燈 / Music-synchronized Breathing Light
-- 音頻信號分析
-- 節拍同步呼吸
-- 頻譜響應效果
-
-## 實際應用場景 / Practical Application Scenarios
-
-- **電子產品指示燈 / Electronic Product Indicators**: 待機狀態顯示
-- **夜間照明 / Night Lighting**: 溫馨的環境照明
-- **汽車氛圍燈 / Automotive Ambient Lighting**: 車內裝飾照明
-- **智慧穿戴設備 / Smart Wearable Devices**: 狀態提示功能
-- **建築景觀照明 / Architectural Landscape Lighting**: 動態裝飾效果
